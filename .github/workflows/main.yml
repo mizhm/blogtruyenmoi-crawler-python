@@ -25,19 +25,19 @@ jobs:
         run: python main.py
 
       - name: Upload Excel file
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: manga-details-excel
           path: manga_details.xlsx
 
       - name: Upload JSON file
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: manga-details
           path: manga_details.json
 
       - name: Upload JSON file manga link
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: manga-links
           path: manga-links.json
